@@ -12,9 +12,7 @@ public class Program {
 		//Teste
 		SellerDao sellerDao = DaoFactory.createSellerDao();
 		
-		
-		Department department = new Department(2, "Electronics");
-		List<Seller> sellers = sellerDao.findByDepartment(department);
+		List<Seller> sellers = sellerDao.findAll();
 		
 		sellers.forEach(System.out::println);
 		
