@@ -15,7 +15,7 @@ public class Program {
 		Department department = new Department(1, "Computers");
 		Seller seller = new Seller(1, "Teste 0", "teste@gmail.com", new Date(), 1000.00, department);
 		
-		sellerDao.update(seller);
+		sellerDao.deleteById(seller.getId());
 		
 	}
 }
