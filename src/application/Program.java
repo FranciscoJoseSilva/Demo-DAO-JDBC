@@ -13,10 +13,9 @@ public class Program {
 		SellerDao sellerDao = DaoFactory.createSellerDao();
 		
 		Department department = new Department(1, "Computers");
-		Seller seller = new Seller(null, "Teste 0", "teste@gmail.com", new Date(), 1000.00, department);
+		Seller seller = new Seller(1, "Teste 0", "teste@gmail.com", new Date(), 1000.00, department);
 		
-		sellerDao.insert(seller);
-		System.out.println("new id = "+ seller.getId());
+		sellerDao.update(seller);
 		
 	}
 }
